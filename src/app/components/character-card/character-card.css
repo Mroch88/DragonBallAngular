@@ -1,0 +1,23 @@
+.card {
+  width: 250px;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  margin: 20px;
+}
+
+.card img {
+  width: 180px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px;
+}
