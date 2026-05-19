@@ -1,0 +1,11 @@
+<h1 class="titulo">Villanos Dragon Ball</h1>
+
+<div class="cards-container">
+
+  @for(villain of villains; track villain.id) {
+
+    <app-character-card [character]="villain"></app-character-card>
+
+  }
+
+</div>

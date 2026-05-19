@@ -4,17 +4,20 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-
 export class Dragonball {
 
   private http = inject(HttpClient);
 
-  private apiUrl = 'https://dragonball-api.com/api/characters?limit=100';
+  private charactersUrl = 'https://dragonball-api.com/api/characters?limit=100';
+  private planetsUrl = 'https://dragonball-api.com/api/planets?limit=100';
 
   getCharacters() {
+    return this.http.get<any>(this.charactersUrl);
+    
+  }
 
-    return this.http.get<any>(this.apiUrl);
-
+  getPlanets() {
+    return this.http.get<any>(this.planetsUrl);
   }
 
 }

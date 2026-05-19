@@ -1,0 +1,10 @@
+.about {
+  margin: 40px;
+  padding: 30px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+}
+
+.about h1 {
+  color: #081128;
+}

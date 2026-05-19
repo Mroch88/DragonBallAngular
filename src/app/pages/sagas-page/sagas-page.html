@@ -1,0 +1,11 @@
+<h1 class="titulo">Saga Z Fighters</h1>
+
+<div class="cards-container">
+
+  @for(character of characters; track character.id) {
+
+    <app-character-card [character]="character"></app-character-card>
+
+  }
+
+</div>

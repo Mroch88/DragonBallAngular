@@ -1,17 +1,16 @@
-import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { TestBed } from '@angular/core/testing';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class Dragonball {
+import { Dragonball } from './dragonball';
 
-  private http = inject(HttpClient);
+describe('Dragonball', () => {
+  let service: Dragonball;
 
-  private apiUrl = 'https://api-dragon-ball.saosl.com/api/characters';
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(Dragonball);
+  });
 
-  getCharacters() {
-    return this.http.get<any>(this.apiUrl);
-  }
-
-}
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});

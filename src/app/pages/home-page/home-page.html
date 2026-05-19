@@ -1,0 +1,22 @@
+<h1 class="titulo">Personajes Dragon Ball</h1>
+
+@if(characters.length > 0) {
+
+  <p>Total personajes: {{ characters.length }}</p>
+
+  <div class="cards-container">
+
+    @for(character of characters; track character.id) {
+
+      <app-character-card [character]="character"></app-character-card>
+
+    }
+
+  </div>
+
+} @else {
+
+  <p>Total personajes: {{ characters.length }}</p>
+  <p>No hay personajes para mostrar.</p>
+
+}

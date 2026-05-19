@@ -1,0 +1,32 @@
+.titulo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.planetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.planeta-card {
+  width: 260px;
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.planeta-card img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.planeta-card p {
+  font-size: 14px;
+}

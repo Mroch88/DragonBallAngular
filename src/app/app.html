@@ -1,18 +1,3 @@
-<!-- Componente navbar -->
 <app-navbar></app-navbar>
 
-<!-- Contenedor de las cartas -->
-<div class="cards-container">
-
-  <!-- Recorre todos los personajes -->
-  @for(character of characters; track character.id){
-
-    <!-- Crea una card por personaje -->
-    <!-- [character] envía los datos -->
-    <app-character-card
-      [character]="character">
-    </app-character-card>
-
-  }
-
-</div>
+<router-outlet></router-outlet>
