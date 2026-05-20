@@ -1,0 +1,27 @@
+@if(character) {
+
+  <div class="detail">
+
+    <h1>{{ character.name }}</h1>
+
+    <img [src]="character.image">
+
+    <p><strong>Raza:</strong> {{ character.race }}</p>
+
+    <p><strong>Género:</strong> {{ character.gender }}</p>
+
+    <p><strong>Ki:</strong> {{ character.ki }}</p>
+
+    <p><strong>Ki total:</strong> {{ character.maxKi }}</p>
+
+    <p><strong>Afiliación:</strong> {{ character.affiliation }}</p>
+
+    <p>{{ character.description }}</p>
+
+  </div>
+
+} @else {
+
+  <p>Cargando personaje...</p>
+
+}

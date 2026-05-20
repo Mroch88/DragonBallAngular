@@ -1,0 +1,19 @@
+.detail {
+  background-color: #1f2937;
+  color: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 70%;
+  text-align: center;
+}
+
+.detail img {
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.detail p {
+  font-size: 18px;
+}

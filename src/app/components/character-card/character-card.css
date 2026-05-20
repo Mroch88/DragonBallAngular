@@ -21,3 +21,7 @@
 .card p {
   margin: 6px;
 }
+
+.card-link {
+  text-decoration: none;
+}

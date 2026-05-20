@@ -8,16 +8,19 @@ export class Dragonball {
 
   private http = inject(HttpClient);
 
-  private charactersUrl = 'https://dragonball-api.com/api/characters?limit=100';
-  private planetsUrl = 'https://dragonball-api.com/api/planets?limit=100';
+  private apiURL = 'https://dragonball-api.com/api';
 
   getCharacters() {
-    return this.http.get<any>(this.charactersUrl);
+    return this.http.get<any>(this.apiURL + '/characters?limit=100');
     
   }
 
   getPlanets() {
-    return this.http.get<any>(this.planetsUrl);
+    return this.http.get<any>(this.apiURL + '/planets?limit=100');
   }
+
+  getCharacterById(id: string) {
+  return this.http.get<any>(this.apiURL + '/characters/' + id);
+}
 
 }

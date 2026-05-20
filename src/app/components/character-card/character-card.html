@@ -1,11 +1,15 @@
-<div class="card">
+<a class="card-link" [routerLink]="['/character', character.id]">
 
-  <h2>{{ character.name }}</h2>
+  <div class="card">
 
-  <img [src]="character.image">
+    <h2>{{ character.name }}</h2>
 
-  <p>{{ character.race }} - {{ character.gender }}</p>
+    <img [src]="character.image">
 
-  <p>Base KI: {{ character.ki }}</p>
+    <p>{{ character.race }} - {{ character.gender }}</p>
 
-</div>
+    <p>Base KI: {{ character.ki }}</p>
+
+  </div>
+
+</a>
